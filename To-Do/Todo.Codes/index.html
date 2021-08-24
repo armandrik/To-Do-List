@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="meta-container">
+        <div class="header-container">
+            <h2>لیست انجام کارهای روزمره</h2>
+        </div>
+        <div class="input-container">
+            <input type="text" name="todoinput" id="inputTodo" placeholder="لیست خود را وارد کنید...">
+            <div class="icon">
+                <i class="fa fa-plus-circle" id="icon"></i>
+            </div>
+        </div>
+        <div class="ul-container">
+            <ul id="todo-list">
+
+            </ul>
+        </div>
+        <div class="footet">
+            <button class="clear-button"><b>پاک کردن لیست</b></button>
+        </div>
+    </div>
+    <div class="alert-show">
+        <div class="popup">
+            <h3>لیست شما خالی است</h3>
+            <p class="close">X</p>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,266 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'BMitra';
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    @font-face {
+        font-family: 'BMitra';
+        src: url('../font/BMitra.eot?#') format('eot'), /* IE6–8 */
+        url('../font/BMitra.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+        url('../font/BMitra.ttf') format('truetype');
+        /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, #334d50, #a5a48f);
+        background-size: 400% 400%;
+        animation: gradient 8s ease infinite;
+        font-family: 'BMitra';
+    }
+    
+    .meta-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(145deg, #3a3a3a, #313131);
+        box-shadow: 3px 3px 15px #161616, -4px -5px 15px #565656;
+        width: 82%;
+        height: 85vh;
+        border-top: 10px solid rgb(255, 254, 254);
+        border-radius: 10px;
+    }
+    
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        background-color: crimson;
+        width: 100%;
+        height: 8vh;
+    }
+    
+    .input-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    
+    input[type='text'] {
+        width: 100%;
+        border: none;
+        height: 5vh;
+        direction: rtl;
+        padding-right: 10px;
+        background-color: rgb(43, 43, 43);
+        color: white;
+        border-right: 15px solid white;
+        font-size: large;
+    }
+    /* you can add icon side of the input just change display to flex */
+    
+    .icon {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 6%;
+        height: 5vh;
+        order: -1;
+        font-size: xx-large;
+        background-color: rgb(43, 43, 43);
+    }
+    
+    i {
+        color: #bec6c7;
+        transition: .5s;
+        cursor: pointer;
+    }
+    
+    i:hover {
+        color: rgba(77, 211, 171, 0.925);
+    }
+    
+    .ul-container {
+        margin-top: 5px;
+        width: 100%;
+        height: 61vh;
+        overflow-y: scroll;
+        margin-bottom: 18px;
+    }
+    
+    .ul-container::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: rgb(54, 54, 54);
+    }
+    
+    .ul-container::-webkit-scrollbar {
+        width: 15px;
+        background-color: rgb(54, 54, 54);
+    }
+    
+    .ul-container::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: rgb(114, 114, 114);
+    }
+    
+    ul {
+        list-style-type: none;
+        direction: rtl;
+    }
+    
+    li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: rgb(219, 219, 219);
+        border-radius: 7px;
+        margin: 5px 5px 5px 0;
+        color: rgb(48, 48, 48);
+        width: 89%;
+        height: 5vh;
+        padding-right: 10px;
+        font-size: 1.4em;
+        transition: .2s;
+    }
+    
+    li:nth-child(even) {
+        background-color: rgb(179, 179, 179);
+    }
+    
+    li:hover {
+        cursor: pointer;
+        background-color: rgb(101, 211, 202);
+    }
+    
+    input[type="checkbox"] {
+        margin-right: auto;
+        margin-left: 20px;
+        width: 1.3em;
+        height: 1.3em;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    input[type="checkbox"]:checked {
+        background-color: rgb(34, 121, 161);
+        box-shadow: 0 0 15px 1px rgb(0, 0, 225);
+        width: 165px;
+        height: 4vh;
+    }
+    
+    .c9 {
+        filter: hue-rotate(240deg)
+    }
+    
+    .fa-trash-o {
+        background-color: white;
+        color: rgb(255, 0, 0);
+        width: 85px;
+        height: 33px;
+        margin-left: -10.5%;
+        margin-right: 1%;
+        border-radius: 15px;
+        padding: 4px 33px 0 0;
+    }
+    
+    .fa-trash-o:hover {
+        color: white;
+        background-color: crimson;
+    }
+    
+    .delete-li {
+        display: none;
+    }
+    
+    .footet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 6vh;
+    }
+    
+    .clear-button {
+        background-color: crimson;
+        width: 40%;
+        height: 6vh;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+    
+    .clear-btn-disabl {
+        opacity: .5;
+    }
+    
+    .popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        width: 30%;
+        height: 20vh;
+        border-radius: 10px;
+        font-size: 25px;
+        background: linear-gradient(90deg, #334d50, #a5a48f);
+        box-shadow: 0 0 0 0 white, 0 0 0 1000px rgba(107, 96, 96, 0.795);
+        color: rgba(255, 255, 255, 0.856);
+        visibility: hidden;
+    }
+    
+    .popup.active {
+        visibility: visible;
+        transition-duration: 3s;
+    }
+    
+    p.close {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        color: white;
+        background-color: crimson;
+        padding: 8px 12px 4px 11px;
+        cursor: pointer;
+        margin-left: 343px;
+        margin-bottom: 82px;
+        border-top-right-radius: 8px;
+    }
