@@ -90,10 +90,10 @@
         border-right: 15px solid white;
         font-size: large;
     }
-    /* you can add icon side of the input just change display to flex */
+    /* you can remove icon side of the input just change display to none */
     
     .icon {
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 6%;
