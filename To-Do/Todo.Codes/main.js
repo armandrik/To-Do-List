@@ -12,13 +12,15 @@ function inputValid() {
 }
 
 inputvalue.addEventListener('change', AddMyList);
-addtodo.addEventListener('click', function() {
-    if (inputValid() == "") {
-        popup.classList.add('active');
-    } else if (inputvalue.value > 0) {
-        AddMyList();
-    }
-});
+
+// this part of code dosent work idk why
+// addtodo.addEventListener('click', function() {
+//     if (inputValid() == "") {
+//         popup.classList.add('active');
+//     } else if (inputvalue.value > 0) {
+//         AddMyList();
+//     }
+// });
 
 function AddMyList() {
     if (inputValid() > 0) {
