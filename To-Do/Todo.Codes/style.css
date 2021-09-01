@@ -53,6 +53,7 @@
         height: 85vh;
         border-top: 10px solid rgb(255, 254, 254);
         border-radius: 10px;
+        margin-top: 3%;
     }
     
     .header-container {
