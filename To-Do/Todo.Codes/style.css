@@ -91,6 +91,9 @@
         border-right: 15px solid white;
         font-size: large;
     }
+   input[type='text']:focus {
+      outline: none;
+   }
     /* you can remove icon side of the input just change display to none */
     
     .icon {
